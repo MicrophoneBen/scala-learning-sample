@@ -12,14 +12,22 @@ object MethodScala {
     println()
     myPrintString("zhang bingquan", 26)
     println()
-    mPrintString("abc")
+    mPrintString("abcdefg")
     println()
     myMethod(leg = 8, content = "哈哈哈")
     myMethod("你好")
     println(sum(1,2,3,4,5))
     val sum_factorial = factorial(4);
     println(sum_factorial)
+
+    println("=================================================================================================")
+    print("3和6的和是 ： ")
+    println(add(3,6))
+
+
+
   }
+
 
   /*
      scala定义函数的标准格式为：
@@ -62,4 +70,11 @@ object MethodScala {
     else
       n * factorial(n - 1)
   }
+
+  //方法中有return返回值的需要显示声明返回类型
+  def add(a: Int, b: Int): Int = {
+    return a + b
+  }
+
+
 }
