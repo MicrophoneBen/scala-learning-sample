@@ -59,4 +59,15 @@ object Mostfold {
   }
 
   getSum(orgsFunction, 10)
+
+
+  //函数的仿写
+  val func: Int =>String = {x => (x * x).toString}
+
+  def calculateDoubleMulti(f: Int => String, str: String): Unit ={
+    printf("%s 的平方计算结果是 ： %s",  str, f(6))
+  }
+
+  calculateDoubleMulti(func, "6")
+  println()
 }
